@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ZD-ong/163music/issues"
   },
-  "homepage": "https://github.com/ZD-ong/163music#readme"
+  "homepage": "https://github.com/ZD-ong/163music#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
 }
