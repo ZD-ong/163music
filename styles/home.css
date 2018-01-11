@@ -1,0 +1,24 @@
+section.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #d23e39;
+}
+section.topbar .logo>svg {
+    width: 142px;
+    height: 25px;
+    vertical-align: top; /* ß解决 inline-block 的bug */
+}
+section.globalTabs {
+
+}
+section.playList {
+
+}
+section.songs {
+
+}
+section.art {
+
+}
