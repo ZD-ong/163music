@@ -8,12 +8,21 @@ body {
     padding-left: 8px;
     margin: 20px 0 8px 0;
 }
+.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background: white;
+}
 section.topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #d43c33;
     padding: 17px 10px;
+    
 }
 section.topbar .logo>svg {
     width: 142px;
@@ -79,16 +88,24 @@ section.topbar > a::after {
     width: 100%;
 
 }
+.tab-content {
+    margin-top: 105px;
+}
 .tab-content > li {
     display: none;
 }
 .tab-content > li.active {
     display: block;
 }
-
-section.playLists {
-
+.noCollapse::before {
+    content: '';
+    display: table;
 }
+.noCollapse::after {
+    content: '';
+    display: table;
+}
+
 
 
 section.playLists > ol.songs {
@@ -121,7 +138,7 @@ section.playLists .cover span {
     position: absolute;
     right: 5px;
     top: 2px;
-    z-index: 3;
+
     color: white;
 
 }
@@ -134,8 +151,9 @@ section.songs {
 
 }
 section.songs > .list {
-    margin-top: 10px;
+    margin-top: 18px;
 }
+
 section.songs > .list > li > h3 {
     font-size: 17px;
 }
@@ -155,12 +173,43 @@ section.songs > .list .playButton {
     right: 8px;
     top: 50%;
     transform: translateY(-50%);
+}
+section.songs > .list .icon-play {
+    width: 22px;
+    height: 22px;
     vertical-align: middle;
+    fill: #aaaaaa;
 }
-section.songs > .list .playButton i {
-    font-size: 22px;
-    color: #aaaaaa;
-}
-section.art {
+section.songs > .list .icon-sq {
+    fill: #fe672e;
+    font-size: 14px;
 
+}
+
+section.art {
+    padding-top: 30px;
+    background: transparent url(//i.loli.net/2018/01/13/5a5a05106efa0.png) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 18px;
+}
+section.art svg {
+    width: 230px;
+    height: 44px;
+}
+section.art .link > a {
+    display: inline-block;
+    border: 1px solid;
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 47px;
+    border-radius: 20px;
+    color: #d43c33;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+section.art .copyright {
+    font-size: 12px;
+    color: #888888;
+    transform: scale(0.75);
 }
